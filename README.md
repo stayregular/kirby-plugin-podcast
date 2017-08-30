@@ -6,11 +6,23 @@ Basic podcast plugin for Kirby CMS.
 
 -Drag all the files into your Kirby installation. Or do a git clone if you're feeling fancy.
 
-## How to Use
+### To Enable Podcasts
+-In the `/content/` folder of Kirby, create a folder called `podcasts` and put in a blank file called podcasts.txt.
+-Inside `/content/podcasts/`, create a folder called `your-podcast-name`. (for each new podcast show, add another folder)
 
-Using Kirby Panel: Navigate to the Podcast page, navigate to the year, add a page with the template Podcast.
+### To Enable the Podcast Feed
+-In the `/content/` folder of Kirby, create a folder called `feed`
+-In the `/content/feed/` folder of Kirby, create a folder called `your-podcast-name` (must match slug of podcast folder)
+-Put in a blank file called feedpodcast.txt.
+-Done!
 
-Otherwise: Create some text files using the YML as a base.
+## How to Add Podcasts
+
+-Create a blank txt file inside `/content/podcasts/your-podcast-name/20170830-sample-podcast-title/` called `podcast.txt`
+
+OR 
+
+Using Kirby Panel: Navigate to the Podcast page, navigate to the specific Podcast Show page, then add a new page with the template Podcast.
 
 ## Thanks to
 
