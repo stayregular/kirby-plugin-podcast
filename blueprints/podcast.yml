@@ -1,0 +1,106 @@
+title: Podcast
+
+pages: false
+
+fields:
+  title:
+    label: Title
+    type:  title
+
+  coverimage:
+    label: Cover Image
+    type: url
+    width: 1/2
+    required: true
+
+  mp3:
+    label: URL to MP3
+    type: url
+    width: 1/2
+    required: true
+
+  date:
+    icon: calendar
+    label: Date
+    type: date
+    format: LL
+    placeholder: Select a date…
+    default: today
+    required: true
+    width: 1/3
+
+  filesize:
+    label: MP3 Filesize
+    type: number
+    readonly: true
+    width: 1/3
+
+  duration:
+    label: MP3 Duration
+    type: text
+    readonly: true
+    width: 1/3
+
+  category:
+    label: Category
+    type: select
+    width: 1/2
+    options:
+      Stoner Sunday
+      420 News Livestream
+
+  tags:
+    label: Tags
+    type: tags
+    width: 1/2
+
+  summary:
+    label: Short Description
+    type: textarea
+
+  text:
+    label: Post Content
+    type: textarea
+
+  upvotes:
+    label: Upvotes
+    type: number
+    readonly: true
+    width: 1/2
+
+  downloads:
+    label: Downloads
+    type: number
+    readonly: true
+    width: 1/2
+
+  altlinks:
+    label: Alternative Links
+    type: structure
+    width: 1/3
+    entry: >
+     {{alternative}}
+    fields:
+      alternative:
+        label: URL
+        type: url
+        placeholder: http://youtube.com/watch?v=329893ajksf
+
+  seoheader:
+    label: SEO / Marketing
+    type: headline
+
+  seotitle:
+    icon: business
+    label: SEO Title
+    type: text
+    width: 1/2
+
+  seotags:
+    label: SEO Keywords
+    type: tags
+    width: 1/2
+
+  seodesc:
+    label: SEO Description
+    type: text
