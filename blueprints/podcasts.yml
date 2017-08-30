@@ -1,0 +1,93 @@
+title: Podcast
+
+files: false
+
+pages:
+  template: podcast
+  sort: flip
+  num: date
+
+options:
+  template: false
+  status: false
+
+icon: newspaper-o
+
+fields:
+  title:
+    label: Title
+    type: title
+    required: true
+    width: 1/2
+
+  coverimage:
+    label: Cover Image
+    type: url
+    width: 1/2
+    required: true
+
+  itunescat:
+    label: Categories
+    type: checkbox
+    options:
+      Art > Design
+      Art > Fashion & Beauty
+      Art > Food
+      Art > Literature
+      Art > Performing Arts
+      Art > Visual Arts
+      Business > Business News
+      Business > Careers
+      Business > Investing
+      Business > Management & Marketing
+      Business > Shopping
+      Comedy
+      Education > Educational Technology
+      Education > Higher Education
+      Education > K-12
+      Education > Language Courses
+      Education > Training
+      Games &amp; Hobbies > Automotive
+      Games &amp; Hobbies > Aviation
+      Games &amp; Hobbies > Hobbies
+      Games &amp; Hobbies > Other Games
+      Games &amp; Hobbies > Video Games
+      Health > Alternative Health
+      Health > Fitness & Nutrition
+      Health > Self-Help
+      Health > Sexuality
+      Health > Kids & Family
+      Music
+      News &amp; Politics
+      Science &amp; Medicine > Medicine
+      Science &amp; Medicine > Natural Sciences
+      Science &amp; Medicine > Social Sciences
+      Society &amp; Culture > History
+      Society &amp; Culture > Personal Journals
+      Society &amp; Culture > Philosophy
+      Society &amp; Culture > Places &amp; Travel
+      Technology > Gadgets
+      Technology > Podcasting
+      Technology > Software How-To
+      Technology > Tech News
+
+  perpage:
+    label: Posts per page
+    type: number
+    min: 1
+    max: 20
+    default: 5
+    width: 1/4
+
+  text:
+    label: Text
+    type: textarea
+
+  info:
+    label: Hint
+    type: info
+    text: >
+      The podcast page fetches its subpages and displays them as podcast posts.
+      To fill the podcast page with content, just hit the Add button
+      to create a new article. Your podcast articles will be automatically ordered by
+      date.
